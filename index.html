@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
- <title>Teachable Machine Image Model</title>
- <meta charset="utf-8">
+    <title>Teachable Machine Image Model</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css" />
+    
 </head>
 <body>
     <div>Teachable Machine Image Model</div>
@@ -33,7 +35,7 @@
 
             // Convenience function to setup a webcam
             const flip = true; // whether to flip the webcam
-            webcam = new tmImage.Webcam(200, 200, flip); // width, height, flip
+            webcam = new tmImage.Webcam(500, 500, flip); // width, height, flip
             await webcam.setup({ facingMode: "environment" }); // request access to the webcam
             await webcam.play();
             window.requestAnimationFrame(loop);
